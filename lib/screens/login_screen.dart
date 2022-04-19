@@ -63,7 +63,9 @@ class _LoginScreenState extends State<LoginScreen> {
       child: MaterialButton(
         padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery.of(context).size.width,
-        onPressed: () {},
+        onPressed: () {
+          // Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()))
+        },
         child: const Text(
           "Login",
           textAlign: TextAlign.center,
