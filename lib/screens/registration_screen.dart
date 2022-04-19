@@ -11,11 +11,11 @@ class _RegistrationSreenState extends State<RegistrationSreen> {
   //our form key
   final _formKey = GlobalKey<FormState>();
   //editing Controller
-  final firstNameEditingController = new TextEditingController();
-  final secondNameEditingController = new TextEditingController();
-  final emailEditingController = new TextEditingController();
-  final passwordEditingController = new TextEditingController();
-  final confirmPasswordEditingController = new TextEditingController();
+  final firstNameEditingController = TextEditingController();
+  final secondNameEditingController = TextEditingController();
+  final emailEditingController = TextEditingController();
+  final passwordEditingController = TextEditingController();
+  final confirmPasswordEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +30,8 @@ class _RegistrationSreenState extends State<RegistrationSreen> {
         },
         textInputAction: TextInputAction.next,
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.account_circle),
-          contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+          prefixIcon: const Icon(Icons.account_circle),
+          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "First Name",
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -48,8 +48,8 @@ class _RegistrationSreenState extends State<RegistrationSreen> {
         },
         textInputAction: TextInputAction.next,
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.account_circle),
-          contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+          prefixIcon: const Icon(Icons.account_circle),
+          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Second Name",
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -66,8 +66,8 @@ class _RegistrationSreenState extends State<RegistrationSreen> {
         },
         textInputAction: TextInputAction.next,
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.mail),
-          contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+          prefixIcon: const Icon(Icons.mail),
+          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Email",
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -85,8 +85,8 @@ class _RegistrationSreenState extends State<RegistrationSreen> {
         },
         textInputAction: TextInputAction.next,
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.vpn_key),
-          contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+          prefixIcon: const Icon(Icons.vpn_key),
+          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Password",
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -104,8 +104,8 @@ class _RegistrationSreenState extends State<RegistrationSreen> {
         },
         textInputAction: TextInputAction.done,
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.vpn_key),
-          contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+          prefixIcon: const Icon(Icons.vpn_key),
+          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Confirm Password",
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -118,7 +118,7 @@ class _RegistrationSreenState extends State<RegistrationSreen> {
       borderRadius: BorderRadius.circular(30),
       color: Colors.redAccent,
       child: MaterialButton(
-        padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+        padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery.of(context).size.width,
         onPressed: () {},
         child: const Text(
@@ -135,7 +135,7 @@ class _RegistrationSreenState extends State<RegistrationSreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.red),
+          icon: const Icon(Icons.arrow_back, color: Colors.red),
           onPressed: () {
             Navigator.of(context).pop();
           },
@@ -159,19 +159,19 @@ class _RegistrationSreenState extends State<RegistrationSreen> {
                           "assets/logo.png",
                           fit: BoxFit.contain,
                         )),
-                    SizedBox(height: 45),
+                    const SizedBox(height: 45),
                     firstNameField,
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     secondNameField,
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     emailField,
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     passwordField,
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     confirmPasswordField,
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     signUpButton,
-                    SizedBox(height: 15),
+                    const SizedBox(height: 15),
                   ],
                 ),
               ),

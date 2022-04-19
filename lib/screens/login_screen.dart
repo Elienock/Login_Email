@@ -13,8 +13,8 @@ class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
 
   //editing controller
-  final TextEditingController emailController = new TextEditingController();
-  final TextEditingController passwordController = new TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     //email field
@@ -28,8 +28,8 @@ class _LoginScreenState extends State<LoginScreen> {
         },
         textInputAction: TextInputAction.next,
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.mail),
-          contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+          prefixIcon: const Icon(Icons.mail),
+          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Email",
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -48,8 +48,8 @@ class _LoginScreenState extends State<LoginScreen> {
         },
         textInputAction: TextInputAction.done,
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.vpn_key),
-          contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+          prefixIcon: const Icon(Icons.vpn_key),
+          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Password",
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -61,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
       borderRadius: BorderRadius.circular(30),
       color: Colors.redAccent,
       child: MaterialButton(
-        padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+        padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery.of(context).size.width,
         onPressed: () {},
         child: const Text(
@@ -93,23 +93,24 @@ class _LoginScreenState extends State<LoginScreen> {
                           "assets/logo.png",
                           fit: BoxFit.contain,
                         )),
-                    SizedBox(height: 45),
+                    const SizedBox(height: 45),
                     emailField,
-                    SizedBox(height: 45),
+                    const SizedBox(height: 45),
                     passwordField,
-                    SizedBox(height: 45),
+                    const SizedBox(height: 45),
                     loginButton,
-                    SizedBox(height: 45),
+                    const SizedBox(height: 45),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Text("Don't have an account? "),
+                        const Text("Don't have an account? "),
                         GestureDetector(
                           onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => RegistrationSreen()));
+                                    builder: (context) =>
+                                        const RegistrationSreen()));
                           },
                           child: const Text(
                             "SignUp",
