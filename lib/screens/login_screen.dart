@@ -1,3 +1,4 @@
+import 'package:email_password_login/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -104,7 +105,12 @@ class _LoginScreenState extends State<LoginScreen> {
                       children: <Widget>[
                         Text("Don't have an account? "),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => RegistrationSreen()));
+                          },
                           child: const Text(
                             "SignUp",
                             style: TextStyle(
