@@ -1,4 +1,4 @@
-import 'package:email_password_login/screens/registration_screen.dart';
+import 'package:email_password_login/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +20,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//hyfehfjsjsdkj
-//fjfjfjgfjgfjgfij//nfhhdfj
-//djfdhfdfdiudfiu
-//hfhfh
