@@ -273,6 +273,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
+  webengage_flutter:
+    dependency: "direct main"
+    description:
+      name: webengage_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.3"
 sdks:
   dart: ">=2.16.2 <3.0.0"
-  flutter: ">=1.12.13+hotfix.5"
+  flutter: ">=1.20.0"
