@@ -1,21 +1,11 @@
 import 'package:email_password_login/screens/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-//import 'package:webengage_flutter/webengage_flutter.dart';
 
 Future<void> main() async {
-  //WebEngagePlugin _webEngagePlugin = new WebEngagePlugin();
-
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    // Replace with actual values
-    options: FirebaseOptions(
-      apiKey: "AIzaSyBgbTJYiRXMP3k_TXLqScSYwQnILoo7dmQ",
-      appId: "1:976603059935:web:d42b0afcf2c6a230d13b6a",
-      messagingSenderId: "976603059935",
-      projectId: "busregistrationauth",
-    ),
-  );
+  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 
@@ -26,10 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Email and Password Login',
+      title: 'Email And Password Login',
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
+      debugShowCheckedModeBanner: false,
       home: const LoginScreen(),
     );
   }
